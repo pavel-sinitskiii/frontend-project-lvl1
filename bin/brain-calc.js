@@ -12,14 +12,15 @@ while (i <= 3) {
   const operators = ['+', '-', '*'];
   const randomOperators = operators[Math.floor(Math.random() * 3)];
   const randomExpression = `${firstNum} ${randomOperators} ${secondNum}`;
-  const calculation = (randomOperators, firstNum, secondNum) => {
-    if (randomOperators === '+') {
-      return firstNum + secondNum;
-    } if (randomOperators === '-') {
-      return firstNum - secondNum;
-    } if (randomOperators === '*') {
-      return firstNum * secondNum;
+  const calculation = (operator, num1, num2) => {
+    if (operator === '+') {
+      return num1 + num2;
+    } if (operator === '-') {
+      return num1 - num2;
+    } if (operator === '*') {
+      return num1 * num2;
     }
+    return calculation;
   };
   const result = calculation(randomOperators, firstNum, secondNum);
   const resultStr = result.toString();
