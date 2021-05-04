@@ -30,7 +30,7 @@ while (i <= 3) {
     console.log('Correct!');
     i += 1;
   } else if (answer !== resultStr) {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`);
     break;
   }
   if (i > 3) {
