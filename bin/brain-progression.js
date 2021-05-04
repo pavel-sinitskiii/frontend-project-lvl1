@@ -6,22 +6,19 @@ console.log(`Hello, ${userName}!`);
 console.log('What number is missing in the progression?');
 let i = 1;
 while (i <= 3) {
-  const progression = (length) => {
-    const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-    const num1 = getRandomNum(1, 100);
-    const num2 = getRandomNum(1, 100);
-    const result = [];
-    for (let j = num1; j <= length; j += num2) {
-      result.push(j);
-    }
-    if (result.length >= 5 && result.length <= 10) {
-      return result;
-    }
-    return progression(num1, num2);
-  };
-  const result = progression();
-  const resultLength = result.length;
   const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+  const num1 = getRandomNum(1, 100);
+  const num2 = getRandomNum(1, 100);
+  const length = getRandomNum(5, 10);
+  const progression = (start, step, run) => {
+    const result = [];
+    for (let j = 1; j <= run; j += 1) {
+      result.push(start + step * j);
+    }
+    return result;
+  };
+  const result = progression(num1, num2, length);
+  const resultLength = result.length;
   const num3 = getRandomNum(0, resultLength - 1);
   const missingCharacter = (arr, num) => {
     const resultNum = [];
