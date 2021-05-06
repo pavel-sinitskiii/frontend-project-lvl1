@@ -3,4 +3,4 @@
 ![Linter CI](https://github.com/pavel-sinitskiii/frontend-project-lvl1/actions/workflows/Linter.yml/badge.svg)
 
 ### Asciinema:
-https://asciinema.org/~pavel-sinitskiii
+[Installing and running games](https://asciinema.org/~pavel-sinitskiii)
