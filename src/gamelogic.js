@@ -2,9 +2,9 @@
 const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // Brain-progression;
-const progression = (start, step, run) => {
+const progression = (start, step, length) => {
   const result = [];
-  for (let j = 1; j <= run; j += 1) {
+  for (let j = 1; j <= length; j += 1) {
     result.push(start + step * j);
   }
   return result;

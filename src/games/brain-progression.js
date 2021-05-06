@@ -3,14 +3,14 @@ import gamelogic from '../gamelogic.js';
 
 const descGame = 'What number is missing in the progression?';
 const gameLogic = () => {
-  const num1 = gamelogic.getRandomNum(1, 10);
-  const num2 = gamelogic.getRandomNum(1, 10);
-  const length = gamelogic.getRandomNum(5, 10);
-  const result = gamelogic.progression(num1, num2, length);
-  const resultLength = result.length;
-  const num3 = gamelogic.getRandomNum(0, resultLength - 1);
-  const resultQuestion = gamelogic.missingCharacter(result, num3, resultLength)[0].join(' ');
-  const resultAnswer = gamelogic.missingCharacter(result, num3, resultLength)[1].join(' ');
+  const startOfProgression = gamelogic.getRandomNum(1, 10);
+  const step = gamelogic.getRandomNum(1, 10);
+  const lengthProgression = gamelogic.getRandomNum(5, 10);
+  const randomProgression = gamelogic.progression(startOfProgression, step, lengthProgression);
+  const progressionLength = randomProgression.length;
+  const hiddenNum = gamelogic.getRandomNum(0, progressionLength - 1);
+  const resultQuestion = gamelogic.missingCharacter(randomProgression, hiddenNum, progressionLength)[0].join(' ');
+  const resultAnswer = gamelogic.missingCharacter(randomProgression, hiddenNum, progressionLength)[1].join(' ');
   return [resultQuestion, resultAnswer];
 };
 const gameInt = { descGame, gameLogic };

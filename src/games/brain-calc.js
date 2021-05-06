@@ -8,8 +8,8 @@ const gameLogic = () => {
   const operators = ['+', '-', '*'];
   const randomOperators = operators[Math.floor(Math.random() * 3)];
   const resultQuestion = `${firstNum} ${randomOperators} ${secondNum}`;
-  const result = gamelogic.calculation(randomOperators, firstNum, secondNum).toString();
-  return [resultQuestion, result];
+  const resultAnswer = gamelogic.calculation(randomOperators, firstNum, secondNum).toString();
+  return [resultQuestion, resultAnswer];
 };
 const gameInt = { descGame, gameLogic };
 const startGame = () => index(gameInt);
