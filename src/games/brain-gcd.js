@@ -7,8 +7,8 @@ const getRaund = () => {
   const firstNum = getRandomNum(0, 10);
   const secondNum = getRandomNum(0, 10);
   const question = `${firstNum} ${secondNum}`;
-  const resultAnswer = gcd(firstNum, secondNum).toString();
-  return [question, resultAnswer];
+  const answer = gcd(firstNum, secondNum).toString();
+  return [question, answer];
 };
 const game = { description, getRaund };
 const startGame = () => gameplay(game);
