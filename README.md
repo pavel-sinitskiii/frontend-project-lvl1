@@ -8,11 +8,11 @@
 3. Run the game
 
 ### Commands for running games:
-* Brain Even : brain-even
-* Brain Calc : brain-calc
-* Brain GCD : brain-gcd
-* Brain Progression : brain-progression
-* Brain Prime : brain-prime
+* Determining an Even Number : brain-even
+* Calculator : brain-calc
+* Determining the Greatest Common Divisor : brain-gcd
+* Progression : brain-progression
+* Determining a Prime Number : brain-prime
 
 ### Game instructions:
 ### Brain Even:
