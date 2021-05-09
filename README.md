@@ -15,18 +15,28 @@
 * Brain Prime : brain-prime
 
 ### Game instructions:
-#### Brain Even:
-[![Win the brain-even](https://asciinema.org/a/410246.svg)](https://asciinema.org/a/410246)
-[![Defeat in the brain-even](https://asciinema.org/a/410247.svg)](https://asciinema.org/a/410247)
-#### Brain Calc:
-[![Win the brain-calc](https://asciinema.org/a/411432.svg)](https://asciinema.org/a/411432)
-[![Defeat in the brain-calc](https://asciinema.org/a/411433.svg)](https://asciinema.org/a/411433)
-#### Brain GCD:
-[![Win the brain-gcd](https://asciinema.org/a/412291.svg)](https://asciinema.org/a/412291)
-[![Defeat in the brain-gcd](https://asciinema.org/a/412292.svg)](https://asciinema.org/a/412292)
-#### Brain Progression:
-[![Win the brain-progression](https://asciinema.org/a/412299.svg)](https://asciinema.org/a/412299)
-[![Defeat in the brain-progression](https://asciinema.org/a/412298.svg)](https://asciinema.org/a/412298)
-#### Brain Prime:
-[![Win the brain-prime](https://asciinema.org/a/412297.svg)](https://asciinema.org/a/412297)
-[![Defeat in the brain-prime](https://asciinema.org/a/412296.svg)](https://asciinema.org/a/412296)
+### Brain Even:
+#### Win the brain-even
+[![asciicast](https://asciinema.org/a/410246.svg)](https://asciinema.org/a/410246)
+#### Defeat in the brain-even
+[![asciicast](https://asciinema.org/a/410247.svg)](https://asciinema.org/a/410247)
+### Brain Calc:
+#### Win the brain-calc
+[![asciicast](https://asciinema.org/a/411432.svg)](https://asciinema.org/a/411432)
+#### Defeat in the brain-calc
+[![asciicast](https://asciinema.org/a/411433.svg)](https://asciinema.org/a/411433)
+### Brain GCD:
+#### Win the brain-gcd
+[![asciicast](https://asciinema.org/a/412291.svg)](https://asciinema.org/a/412291)
+#### Defeat in the brain-gcd
+[![asciicast](https://asciinema.org/a/412292.svg)](https://asciinema.org/a/412292)
+### Brain Progression:
+#### Win the brain-progression
+[![asciicast](https://asciinema.org/a/412299.svg)](https://asciinema.org/a/412299)
+#### Defeat in the brain-progression
+[![asciicast](https://asciinema.org/a/412298.svg)](https://asciinema.org/a/412298)
+### Brain Prime:
+#### Win the brain-prime
+[![asciicast](https://asciinema.org/a/412297.svg)](https://asciinema.org/a/412297)
+#### Defeat in the brain-prime
+[![asciicast](https://asciinema.org/a/412296.svg)](https://asciinema.org/a/412296)
