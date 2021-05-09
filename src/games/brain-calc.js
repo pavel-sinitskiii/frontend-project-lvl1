@@ -1,16 +1,27 @@
-import index from '../index.js';
-import gamelogic from '../gamelogic.js';
+import gameplay from '../index.js';
+import getRandomNum from '../utils.js';
 
-const descGame = 'What is the result of the expression?';
-const gameLogic = () => {
-  const firstNum = gamelogic.getRandomNum(1, 10);
-  const secondNum = gamelogic.getRandomNum(1, 10);
+const description = 'What is the result of the expression?';
+const calculation = (operator, num1, num2) => {
+  let result = 0;
+  if (operator === '+') {
+    result = num1 + num2;
+  } if (operator === '-') {
+    result = num1 - num2;
+  } if (operator === '*') {
+    result = num1 * num2;
+  }
+  return result;
+};
+const getRaund = () => {
+  const firstNum = getRandomNum(1, 10);
+  const secondNum = getRandomNum(1, 10);
   const operators = ['+', '-', '*'];
   const randomOperators = operators[Math.floor(Math.random() * 3)];
-  const resultQuestion = `${firstNum} ${randomOperators} ${secondNum}`;
-  const resultAnswer = gamelogic.calculation(randomOperators, firstNum, secondNum).toString();
-  return [resultQuestion, resultAnswer];
+  const question = `${firstNum} ${randomOperators} ${secondNum}`;
+  const answer = calculation(randomOperators, firstNum, secondNum).toString();
+  return [question, answer];
 };
-const gameInt = { descGame, gameLogic };
-const startGame = () => index(gameInt);
+const game = { description, getRaund };
+const startGame = () => gameplay(game);
 export default startGame;

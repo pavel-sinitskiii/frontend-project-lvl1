@@ -1,12 +1,22 @@
-import index from '../index.js';
-import gamelogic from '../gamelogic.js';
+import gameplay from '../index.js';
+import getRandomNum from '../utils.js';
 
-const descGame = 'Answer "yes" if the number is prime, otherwise answer "no".';
-const gameLogic = () => {
-  const resultQuestion = gamelogic.getRandomNum(1, 100);
-  const resultAnswer = gamelogic.primeNumber(resultQuestion);
-  return [resultQuestion, resultAnswer];
+const description = 'Answer "yes" if the number is prime, otherwise answer "no".';
+const primeNumber = (num) => {
+  let result = 'yes';
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      result = 'no';
+      break;
+    }
+  }
+  return result;
 };
-const gameInt = { descGame, gameLogic };
-const startGame = () => index(gameInt);
+const getRaund = () => {
+  const question = getRandomNum(1, 100);
+  const answer = primeNumber(question);
+  return [question, answer];
+};
+const game = { description, getRaund };
+const startGame = () => gameplay(game);
 export default startGame;
