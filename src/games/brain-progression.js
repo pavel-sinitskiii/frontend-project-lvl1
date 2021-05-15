@@ -4,7 +4,7 @@ import generateRandomNumber from '../utils.js';
 const description = 'What number is missing in the progression?';
 const getProgression = (start, step, length) => {
   const result = [];
-  for (let j = 1; j <= length; j += 1) {
+  for (let j = 0; j <= length; j += 1) {
     result.push(start + step * j);
   }
   return result;
