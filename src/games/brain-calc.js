@@ -1,8 +1,8 @@
-import gameplay from '../index.js';
-import getRandomNum from '../utils.js';
+import play from '../index.js';
+import generateRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
-const calculation = (operator, num1, num2) => {
+const calculate = (operator, num1, num2) => {
   let result = 0;
   if (operator === '+') {
     result = num1 + num2;
@@ -13,15 +13,15 @@ const calculation = (operator, num1, num2) => {
   }
   return result;
 };
-const getRaund = () => {
-  const firstNum = getRandomNum(1, 10);
-  const secondNum = getRandomNum(1, 10);
+const getRound = () => {
+  const firstNumber = generateRandomNumber(1, 10);
+  const secondNumber = generateRandomNumber(1, 10);
   const operators = ['+', '-', '*'];
-  const randomOperators = operators[Math.floor(Math.random() * 3)];
-  const question = `${firstNum} ${randomOperators} ${secondNum}`;
-  const answer = calculation(randomOperators, firstNum, secondNum).toString();
+  const randomOperator = operators[generateRandomNumber(0, 2)];
+  const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
+  const answer = String(calculate(randomOperator, firstNumber, secondNumber));
   return [question, answer];
 };
-const game = { description, getRaund };
-const startGame = () => gameplay(game);
+const game = { description, getRound };
+const startGame = () => play(game);
 export default startGame;
