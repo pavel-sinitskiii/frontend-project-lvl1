@@ -3,21 +3,22 @@ import generateRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const calculate = (operator, num1, num2) => {
-  let result = 0;
-  if (operator === '+') {
-    result = num1 + num2;
-  } if (operator === '-') {
-    result = num1 - num2;
-  } if (operator === '*') {
-    result = num1 * num2;
+  switch (operator) {
+    case '*':
+      return num1 * num2;
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    default:
+      return null;
   }
-  return result;
 };
 const getRound = () => {
   const firstNumber = generateRandomNumber(1, 10);
   const secondNumber = generateRandomNumber(1, 10);
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[generateRandomNumber(0, 2)];
+  const randomOperator = operators[generateRandomNumber(0, operators.length - 1)];
   const question = `${firstNumber} ${randomOperator} ${secondNumber}`;
   const answer = String(calculate(randomOperator, firstNumber, secondNumber));
   return [question, answer];

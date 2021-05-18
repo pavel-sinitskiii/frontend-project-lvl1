@@ -9,8 +9,8 @@ const getProgression = (start, step, length) => {
   }
   return result;
 };
-const getQuestion = (array, index) => {
-  const result = array;
+const getQuestion = (progression, index) => {
+  const result = progression;
   result[index] = '..';
   return result;
 };

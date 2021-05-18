@@ -3,18 +3,19 @@ import generateRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if the number is prime, otherwise answer "no".';
 const isPrime = (num) => {
-  let result = 'yes';
-  for (let i = 2; i < num; i += 1) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i < num / 2; i += 1) {
     if (num % i === 0) {
-      result = 'no';
-      break;
+      return false;
     }
   }
-  return result;
+  return true;
 };
 const getRound = () => {
   const question = generateRandomNumber(1, 100);
-  const answer = isPrime(question);
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 const game = { description, getRound };
